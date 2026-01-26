@@ -122,16 +122,16 @@ nav a {
 .about {
   width: 100%;
   padding: 32px;
-  text-align: center;
 }
 
 .about-cntnr {
-  max-width: 1366px;
+  max-width: 768px;
   margin: 0 auto;
 }
 
 .about-cntnr h2 {
   margin: 32px 0;
+  text-align: center;
 }
 
 .about-cntnr p {
