@@ -47,11 +47,17 @@ if (savedTheme) {
   changeTheme(savedTheme);
 }
 
+const defaultTheme = "blue";
+
 document.querySelectorAll(".theme-btn").forEach((btn) => {
+  const theme = btn.dataset.theme;
+
   if (savedTheme) {
-    if (savedTheme === btn.dataset.theme) {
+    if (savedTheme === theme) {
       btn.classList.add("active");
     }
+  } else if (theme === defaultTheme) {
+    btn.classList.add("active");
   }
 
   btn.addEventListener("click", () => {
